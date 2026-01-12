@@ -6,25 +6,26 @@
     <title>Video Demo | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
-</head>
-<script>
-function toggleMenu() {
-    var menu = document.getElementById("nav-links");
-    if (menu.style.display === "flex") {
-        menu.style.display = "none";
-    } else {
-        menu.style.display = "flex";
+
+    <script>
+    function toggleMenu() {
+        var menu = document.getElementById("nav-links");
+        if (menu.style.display === "flex") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "flex";
+        }
     }
-}
-</script>
+    </script>
+</head>
 <body>
 
     <header>
         <nav class="navbar">
             <div class="menu-icon" onclick="toggleMenu()">
             &#9776;
-        </div>
-            <ul>
+            </div>
+            <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="project.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -41,7 +42,7 @@ function toggleMenu() {
         <iframe
             width="560"
             height="315"
-            src="https://youtu.be/dQw4w9WgXcQ"
+            src="video.mp4"
             title="Video demonstration"
             allowfullscreen>
         </iframe>
