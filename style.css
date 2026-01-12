@@ -54,8 +54,7 @@ body {
     text-align: center;
 }
 
-/* Profile image */
-.profile_img {
+.hero img {
     background-image: url("profile.JPG");
     width: 200px;
     height: 200px;
@@ -63,11 +62,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Text */
-.greeting {
-    color: mediumslateblue;
-    font-size: 1.2rem;
-}
 
 .hero h1 {
     font-size: 3rem;
@@ -90,33 +84,63 @@ footer {
     padding: 20px;
 }
 
+.hero-project h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.description {
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    font-size: 1rem;
+}
+
+/* Project layout */
+.project-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.project-box {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+/* Project image */
+.project-box img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Site Report hero section */
+.hero-report {
+    min-height: 80vh;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Headings */
+.hero-report h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+/* Text */
+.hero-report p {
+    max-width: 700px;
+    margin: 10px auto;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+
 /* Mobile */
 @media screen and (max-width: 600px) {
     .hero h1 {
         font-size: 2.2rem;
     }
 }
-
-/* Contact page text */
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    font-size: 1rem;
-    margin: 10px 0;
-}
-
-/* Contact links */
-.hero a {
-    color: white;
-    text-decoration: underline;
-}
-
-.hero a:hover {
-    color: gainsboro;
-}
-.hero a:visited {
-    color: lightgray;
-}   

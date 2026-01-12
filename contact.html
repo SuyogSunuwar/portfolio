@@ -23,19 +23,27 @@
 
     <main class="hero">
 
-        <h1>Contact</h1>
+        <h1>Contact Me</h1>
 
         <p class="description">
-            You can contact me using the details below.
+            If you would like to contact me, you can use the form below or
+            send me an email directly.
         </p>
 
-        <p>
-            Email: ihavesuyog@gmail.com
-        </p>
+        <form action="mailto:ihavesuyog@gmail.com" method="post" enctype="text/plain">
 
-        <p>
-            Number: 9841211230
-        </p>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <input type="submit" value="Send Message">
+
+        </form>
 
     </main>
 
