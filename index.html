@@ -7,11 +7,25 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("nav-links");
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
+}
+</script>
 <body>
 
     <header>
     <nav class="navbar">
-        <ul>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
+
+        <ul id="nav-links">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="project.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -19,6 +33,7 @@
             <li><a href="videoDemo.html">Video Demo</a></li>
         </ul>
     </nav>
+
     </header>
  
 

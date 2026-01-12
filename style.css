@@ -165,10 +165,35 @@ footer {
     margin-bottom: 30px;
 }
 
+/* Hamburger menu icon */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
 
-/* Mobile */
+/* Mobile navigation */
 @media screen and (max-width: 600px) {
-    .hero h1 {
-        font-size: 2.2rem;
+
+    .navbar {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navbar li {
+        text-align: center;
+        margin: 10px 0;
     }
 }
